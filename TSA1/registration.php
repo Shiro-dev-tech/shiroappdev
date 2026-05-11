@@ -5,7 +5,6 @@
     <title>Student Registration Form</title>
 
     <style>
-
         body{
             font-family: Arial;
             background-color: lightgray;
@@ -29,6 +28,9 @@
             padding: 8px;
         }
 
+        .output{
+            margin-top: 20px;
+        }
     </style>
 
 </head>
@@ -39,7 +41,7 @@
 
 <h2>Student Registration Form</h2>
 
-<form method="POST">
+<form>
 
     Student Number:
     <input type="text" name="studentNo">
@@ -62,35 +64,22 @@
     Address:
     <input type="text" name="address">
 
-    <button type="submit">Submit</button>
+    <button type="button">Submit</button>
 
 </form>
 
-<?php
+<div class="output">
+    <h3>Student Information (Sample Display Only)</h3>
 
-if(isset($_POST['studentNo'])){
+    Student Number: 202411034 <br>
+    Full Name: Marqi Enzo M. Bondoc <br>
+    Name in Proper Case: Marqi Bondoc <br>
+    Course: BSITCST <br>
+    Year Level: 2 <br>
+    Age: 20 <br>
+    Address: Quezon City <br>
 
-    $studentNo = $_POST['studentNo'];
-    $firstName = $_POST['firstName'];
-    $lastName = $_POST['lastName'];
-    $course = $_POST['course'];
-    $year = $_POST['year'];
-    $age = $_POST['age'];
-    $address = $_POST['address'];
-
-    echo "<h3>Student Information</h3>";
-
-    echo "Student Number: " . $studentNo . "<br>";
-    echo "Full Name: " . strtoupper($firstName) . " " . strtoupper($lastName) . "<br>";
-    echo "Name in Proper Case: " . ucwords($firstName . " " . $lastName) . "<br>";
-    echo "Course: " . strtoupper($course) . "<br>";
-    echo "Year Level: " . $year . "<br>";
-    echo "Age: " . number_format($age) . "<br>";
-    echo "Address: " . ucwords($address) . "<br>";
-
-}
-
-?>
+</div>
 
 </div>
 
