@@ -39,8 +39,8 @@
     
 <div class="section">
         <h2>Contact Information</h2>
-        <p>Email: juan@email.com<br>
-           Phone: 09123456789</p>
+        <p>Email: makoyenzo@gmail.com<br>
+           Phone: 09457727993</p>
     </div>
 
  
